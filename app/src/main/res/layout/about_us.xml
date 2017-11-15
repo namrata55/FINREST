@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fin_green"
+    tools:context="apps.mobile.finrest.com.finrest.AboutUs">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Version 1.0.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:id="@+id/fin_version"
+            android:fontFamily="Open Sans"
+            />
+    <ImageView
+        android:id="@+id/fin_image"
+        android:layout_height="50dp"
+        android:layout_width="120dp"
+        app:srcCompat="@drawable/fin"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:text="NEXT GENERATION CORE BANKING SOLUTION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:fontFamily="Open Sans"
+        android:id="@+id/textView7"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:text="Powered by CredenceIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="12dp"
+        android:fontFamily="Open Sans"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_statement"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+   <!-- <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_weight=".3">
+        <TextView
+            android:text="  Name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:text="    NA"
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_weight=".3">
+        <TextView
+            android:text="  Customer Id"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:text="    NA"
+            android:id="@+id/cust_id"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_weight=".3">
+        <TextView
+            android:text="  Available Balance"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:text="    NA"
+            android:id="@+id/available_balance"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"/>
+        </LinearLayout>
+
+    <Space
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_weight=".3">
+        <TextView
+            android:text="  Account No."
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:text="    NA"
+            android:id="@+id/acc_no"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"/>
+    </LinearLayout>-->
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="Name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_column="1"/>
+
+            <TextView
+                android:text="NA"
+                android:id="@+id/name"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Customer Id"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_column="1"/>
+
+            <TextView
+                android:text="NA"
+                android:id="@+id/cust_id"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Account No."
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_column="1"/>
+
+            <TextView
+                android:text="NA"
+                android:id="@+id/sb_acc_no"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Available Balance"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_column="1"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:text="NA"
+                android:id="@+id/available_balance"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_column="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/invoice_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="5dp"
+        android:scrollbars  ="none"
+        >
+        <TableLayout android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/maintable"
+            android:stretchColumns="*"
+            >
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

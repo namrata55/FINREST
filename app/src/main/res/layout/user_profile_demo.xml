@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user4"
+            android:layout_weight="0.59" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Name"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|center"
+            />
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aadhaar"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/aadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAN"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/fin_green"
+            android:gravity="start|bottom"
+            />
+
+        <TextView
+            android:id="@+id/pan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/materialised_black"
+            android:gravity="start|top"
+            />
+    </LinearLayout>
+
+</LinearLayout>

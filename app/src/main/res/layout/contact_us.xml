@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/contact_green"
+        android:id="@+id/imageView3" />
+
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight=".5"/>
+
+    <TextView
+        android:text="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/fin_green"
+        android:gravity="center"
+        android:fontFamily="Open Sans"/>
+
+    <TextView
+        android:text="CredenceIS Computing Private Limited\n#4833/15B, Swami Samarth Empire\nCivil Hospital Road, Ayodhya Nagar\nBelagavi:590001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#8A8D91"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:fontFamily="Open Sans"/>
+
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight=".5"/>
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/fin_green"
+        android:gravity="center"
+        android:fontFamily="Open Sans"/>
+    <TextView
+        android:text="0831-4211211"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#8A8D91"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:fontFamily="Open Sans"/>
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight=".5"/>
+
+    <TextView
+        android:text="Website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@color/fin_green"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:fontFamily="Open Sans"/>
+
+    <TextView
+        android:text="www.credenceis.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:autoLink="web"
+        android:textSize="15dp"
+        android:textColor="#8A8D91"
+        android:linksClickable="true"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center"
+        android:fontFamily="Open Sans"/>
+
+</LinearLayout>

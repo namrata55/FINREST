@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/invoice_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars  ="none"
+        >
+        <TableLayout android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:stretchColumns="*"
+            android:id="@+id/maintable" >
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

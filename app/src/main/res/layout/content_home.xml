@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apps.mobile.finrest.com.finrest.Home"
+    tools:showIn="@layout/app_bar_home">
+
+</RelativeLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apps.mobile.finrest.com.finrest.Home"
+    tools:showIn="@layout/app_bar_home">
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/viewFlipper"
+        android:animateFirstView="false"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide2"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide3"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide4"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide5"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide6"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rupee_image"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slide1"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView5" />
+    </ViewFlipper>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/fin_green"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:background="@color/fin_green"
+            >
+
+            <LinearLayout
+                android:id="@+id/mini_statement_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center|bottom"
+                android:weightSum="5"
+                >
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/mini_statement"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Mini Statement"
+                    android:gravity="center|bottom"
+                    android:textColor="@color/white"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passbook_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center"
+                android:weightSum="5"
+                >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/notebook"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Passbook"
+                    android:textColor="@color/white"
+                    android:gravity="center|bottom"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accounts_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center"
+                android:weightSum="5"
+                >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/rupee3"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Accounts"
+                    android:gravity="center|bottom"                    android:textColor="@color/white"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/fin_green"
+            >
+
+            <LinearLayout
+                android:id="@+id/user_profile_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center"
+                android:weightSum="5"
+                >
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_profile_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="User Profile"
+                    android:textColor="@color/white"
+                    android:gravity="center|bottom"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reset_mpin_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center"
+                android:weightSum="5"
+                >
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/key"
+                    android:id="@+id/imageView3"
+                    android:gravity="center|bottom"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Change MPIN"
+                    android:textColor="@color/white"
+                    android:gravity="center|bottom"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/branch_details_menu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_background"
+                android:gravity="center"
+                android:weightSum="5"
+                >
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/bank1"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Branch Details"
+                    android:textColor="@color/white"
+                    android:gravity="center|bottom"/>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

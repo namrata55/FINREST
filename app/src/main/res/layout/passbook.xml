@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ScrollView
+        android:id="@+id/invoice_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars ="none"
+        >
+        <TableLayout android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:stretchColumns="*"
+            android:id="@+id/maintable" >
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="&lt;&lt; Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/invoice_table"
+        android:layout_toEndOf="@+id/invoice_table"
+        android:background="@color/fin_blue"
+        android:textColor="@color/white"
+        android:id="@+id/btnPre"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="Next >>"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/fin_blue"
+        android:textColor="@color/white"
+        android:id="@+id/btnNext"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

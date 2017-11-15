@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fin_green"
+    android:scrollbars="vertical"
+   >
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/customer_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:layout_marginTop="8dp"
+        android:background="@color/fin_green"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="  Name"
+        android:textColor="@color/gray"
+        android:layout_weight="0.3"
+        android:gravity="left|center"
+        />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="NA"
+        android:textColor="@color/gray"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  Address"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:minLines="2"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  Email"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  Mobile"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  Aadhaar"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/aadhaar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  PAN"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/pan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  DOB"
+            android:textColor="@color/gray"
+            android:layout_weight="0.3"
+            android:gravity="left|center"
+
+            />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="NA"
+            android:textColor="@color/gray"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05"
+        android:background="@color/fin_blue"/>
+
+</LinearLayout>

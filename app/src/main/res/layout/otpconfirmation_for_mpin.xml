@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/part1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:background="@color/fin_blue">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:src="@drawable/finrest_logo"
+                android:layout_gravity="center"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEXT GENERATION CORE BANKING SOLUTION!"
+                android:gravity="center"
+                android:fontFamily="calibri"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:text="OTP "
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:fontFamily="calibri"
+            android:background="@color/fin_blue"/>
+
+        <LinearLayout
+            android:id="@+id/part2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:background="@color/light_blue">
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/otp_for_mpin_edittext"
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:hint="Enter OTP"
+                android:background="@drawable/round_edittext"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:textColorHint="@color/gray"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberPassword"
+                android:fontFamily="calibri"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".04"
+            android:background="@color/light_blue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="OTP has been sent to your registered mobile no."
+                android:id="@+id/textView4" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/part3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08"
+            android:background="@color/light_blue">
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fin_green"
+                android:textColor="@color/white"
+                android:text="Proceed"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
